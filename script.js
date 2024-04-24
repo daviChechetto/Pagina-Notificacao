@@ -24,15 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
             //impedir que a notificação fique negativa e que tire a notificação duas vezes
             var classeExiste = aba.classList.contains('lido');
             console.log(classeExiste)
-            if (contador.textContent > 0 ){
-                if(classeExiste){
-                    
-                }else{
+            if (contador.textContent > 0 && classeExiste == false){
                     contador.textContent = contador.textContent -1;
                     this.classList.add("lido");
                     const ponto = this.querySelector(".ponto");
                     ponto.style.display = "none";
-                }
+                
             }
         })
     });
