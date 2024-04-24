@@ -1,40 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Notifications page</title>
-  <script src="script.js" defer>    </script>
+  
 </head>
 <body>
   <div class="container">
-    <div class="mesa">
       <div class="caixa">
         <div class="topo-caixa">
-          Notifications
+          <div>
+            Notifications <span id="span"></span>
+          </div>
           <button type="button" id="button">
             Mark all as read
           </button>
         </div>
-        <div class="aba">
-          <div class="nome">
-            <img src="assets\images\avatar-mark-webber.webp" alt="Foto de perfil de Mark">
-            Davichechetto
+        <div class="aba">          
+          <img src="assets\images\avatar-mark-webber.webp" alt="Foto de perfil de Mark">
+          <div>
+            <div class="box">
+              <h4>
+                Mark Webber
+                <small>react to your recent post <strong>My first tournament today!</strong></small> <span class="ponto"></span>
+              </h4>
+            </div>
+            <div class="tempo">
+              1m ago
+            </div>
           </div>
-          <div class="mensagem">
-            mensagem
+        </div>
+        <div class="aba">          
+          <img src="assets\images\avatar-angela-gray.webp" alt="Foto de perfil de Angela">
+          <div>
+            <div class="box">
+                <h4>Angela Gray
+                  <small>followed you</small> <span class="ponto"></span>
+                </h4>
+            </div>
+            <div class="tempo">
+              5m ago
+            </div>
+          </div>
+        </div>
+        <div class="aba">          
+          <img src="assets\images\avatar-jacob-thompson.webp" alt="Foto de perfil de Jacob">
+          <div>
+            <div class="box">
+                <h4>
+                  jacob Thompson
+                  <small>has joined your group <strong style="color:hsl(219, 85%, 26%)">Chess Club</strong></small> <span class="ponto"></span>
+                </h4>
+            </div>
+            <div class="tempo">
+              1 days ago
+            </div>
+            </div>
+        </div>
+        <div class="aba">
+          <img src="assets\images\avatar-rizky-hasanuddin.webp" alt="Foto de perfil de Rizky">
+          <div>
+            <details>
+              <summary>
+                <div class="box">
+                    <h4>
+                    Rizky Hasanuddin
+                    <small>send you a private message</small> <span class="ponto"></span>
+                    </h4>
+                </div>
+                <div class="tempo">
+                  5 days ago
+                </div>
+              </summary>
+              <div class="mensagem">
+                <p>Hello, thanks for setting up the Chess Club. I've been a menber for a few weeks now and I'm already having lots of fun and improving my game.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+        <div class="aba">          
+          <img src="assets\images\avatar-kimberly-smith.webp" alt="Foto de perfil de Jacob">
+          <div class="conteudo">
+            <div>
+            <div class="box">
+                <h4>Kimberly Smith
+                <small>commented on your picture</small> <span class="ponto"></span>
+                </h4>
+            </div>
+            <div class="tempo">
+              1 week ago
+            </div>
+          </div>
+            <div class="foto">
+              <img src="assets/images/image-chess.webp" alt="Sua foto">
+            </div>
+          </div>
+          
+        </div>
+        <div class="aba">          
+          <img src="assets\images\avatar-nathan-peterson.webp" alt="Foto de perfil de Peter">
+          <div>
+            <div class="box">
+              <h4>
+                Nathan Peterson
+                <small>react to your recent post <strong>5 end-game strategles to increase your rate</strong></small> <span class="ponto"></span>
+              </h4>
+            </div>
+            <div class="tempo">
+              2 weeks ago
+            </div>
+            </div>
+      </div>
+      <div class="aba">          
+        <img src="assets\images\avatar-anna-kim.webp" alt="Foto de perfil de Anna">
+        <div>
+          <div class="box">
+              <h4>
+                Anna Kim
+                <small>left the group <strong style="color:hsl(219, 85%, 26%)">Chess Club</strong></small> <span class="ponto"></span>
+              </h4>
+          </div>
+          <div class="tempo">
+            2 weeks ago
           </div>
         </div>
       </div>
-      <div class="attribution">
-        Challenge by <a href="https://www.gustavodasilva" target="_blank">Gustavo das Silvass</a>. 
-        Coded by <a href="#">Davichechetto</a>
       </div>
-    </div>
-  </div>
   
-
+  <script src="script.js" defer></script>
 </body>
 </html>

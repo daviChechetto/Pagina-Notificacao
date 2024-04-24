@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
+
+
 body{
     background-color: hsl(210, 60%, 98%);
 }
@@ -10,16 +12,14 @@ body{
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.mesa{
-    display: flex;
-    flex-direction: column;
-}
 
 .caixa{
     display: flex;
+    flex-direction: column;
+    display: flex;
     justify-content: left;
     flex-direction: column;
-
+    width: 410px;
     background-color: #fff;
     padding: 20px;
     border-radius: 20px;
@@ -34,35 +34,102 @@ body{
     font-weight: bold;
 }
 
+#span{
+    border-radius: 0.5rem;
+    background-color: hsl(219, 85%, 26%);
+    color:#fff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
 .caixa button{
     background-color: #ffffff00 ;
-    color: hsl(219, 14%, 63%);
+    color: hsl(219, 12%, 42%);
     width: 125px;
     height: 20px;
     border-width: 0px;
     font-size: 15px;
+    cursor: pointer; 
 }
 
 button:hover{
-    color:hsl(211, 68%, 94%)
+    color:hsl(219, 14%, 63%)
 }
 
 .aba{
-    background-color: hsl(211, 68%, 94%);
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(210, 100%, 98%);
     border-radius: 10px;
     padding: 10px;
+    margin-bottom: 10px;
+    cursor: pointer; 
+}
+.lido{
+    background-color: #fff !important;
 }
 
-.nome{
-    display: flex;
-    font-weight: bold;
-    align-items: center;
-}
-.nome img{
+.aba img{
     height: 40px;
     margin-right: 10px;
 }
+.conteudo{
+    display:flex;
+    width: 100vw;
+    justify-content: space-between;
+}
 
+.ponto{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: hsl(1, 90%, 64%);
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.tempo{
+    font-size: 13px;
+    color:#979b9e
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+.box h4{
+    margin: 0;
+}
+.box small{
+    color:#656668 !;
+    font-weight: normal;
+}
+.box strong{
+    color:#404041
+}
+
+details > summary{
+    list-style-type: none;
+}
 .mensagem{
+    margin:5px;
+    padding:5px;
+    border: 1px solid #c7c7c7;
+    border-radius: 10px;
+}
+p{
+    font-size: 13px;
+}
+
+@media (min-width: 800px)  {
+    .caixa{
+        width: 500px;
+    }
+}
+
+@media (max-height: 795px) {
+    .caixa{
+        height: auto ;
+    }
 
 }
